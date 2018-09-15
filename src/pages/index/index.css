@@ -1,0 +1,16 @@
+.test-h{
+    height: 400px;
+}
+
+.infoList{
+    height: 300px;
+    display: flex;
+}
+.LeftImg{
+    width: 30%;
+    background-color: #123;
+}
+.RightInfoItem{
+    width: 70%;
+    background-color: #456;
+}
