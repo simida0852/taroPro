@@ -10,21 +10,10 @@ export default class Index extends Component {
   config = {
     navigationBarTitleText: "首页"
   }
-  state = {
-    imgs: []
-  }
+
   componentWillMount() { }
 
-  componentDidMount() {
-    Taro.request({
-      url: 'https://pixabay.com/api/?key=9139324-865fa80b99bda419a71c73b70',
-    })
-      .then(res =>
-        this.setState({
-          imgs:res.data.hits
-        })
-      )
-  }
+  componentDidMount() { }
 
   componentWillUnmount() { }
 
@@ -110,17 +99,7 @@ export default class Index extends Component {
           <View className="LeftImg">left</View>
           <View className="RightInfoItem">right</View>
         </View> */}
-        <View>
-          {
-            this.state.imgs && this.state.imgs.map((v)=>
-              <Image key={v.id}
-                style='width: 100%;height: 200px;background: #fff;'
-                src={v.webformatURL}
-                lazyLoad
-              />
-            )
-          }
-        </View>
+
       </View>
     )
   }
