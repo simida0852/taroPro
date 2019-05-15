@@ -1,5 +1,5 @@
 {
-	"miniprogramRoot": "./dist",
+	"miniprogramRoot": "dist/",
 	"projectname": "taroMyApp",
 	"description": "one the project",
 	"appid": "wxe7de0046998773b8",
